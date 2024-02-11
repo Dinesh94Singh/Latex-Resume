@@ -1,0 +1,221 @@
+%
+\documentclass[oneside]{article}
+
+\usepackage{wallpaper}
+\usepackage{fontawesome}
+\usepackage{geometry}
+\usepackage[
+    unicode=true,
+    bookmarks=true,
+    bookmarksnumbered=false,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    breaklinks=false,
+    pdfborder={0 0 0},
+    backref=false,
+    colorlinks=false
+    ]{hyperref}
+\usepackage{lastpage}
+\usepackage{hyphenat}
+\usepackage{hyphsubst}
+\usepackage{tabularx}
+\usepackage{moresize}
+\usepackage{fontspec}
+\usepackage[document]{ragged2e}
+% \usepackage{parskip}
+
+\usepackage[scaled]{helvet}
+\usepackage{fontawesome5}
+\usepackage[defaultfam,tabular,oldstyle]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\normalfont}{}{0pt}{}
+
+\renewcommand{\arraystretch}{1.4}
+
+\setlength\fboxrule{0pt}
+\setlength\fboxsep{12pt}
+% \setlength{\parskip}{.5\baselineskip plus 2pt}
+% \renewcommand{\baselinestretch}{1.1}
+
+\titlespacing{\section}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+% Change PDF Meta Info here
+\hypersetup{
+    pdftitle={Dinesh Singh - CV - English},
+    pdfauthor={Dinesh Singh},
+    pdfsubject={CV}
+}
+
+% Paper size
+\geometry{
+    a4paper,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    nohead,
+    % includefoot,
+    nomarginpar
+}
+
+% Background Color of the Sidebar Column
+\definecolor{sidebg}{cmyk}{1, 0.2, 0.2, 0.2}
+% Background Color of the Main Column
+\definecolor{mainbg}{cmyk}{0, 0, 0.06, 0.05}
+
+% Text Color of the Main Column
+\definecolor{maintext}{cmyk}{1, 0.02, 0, 0.8}
+% Text Color of the Sidebar Column
+\definecolor{sidetext}{cmyk}{0, 0, 0.07, 0.04}
+
+\pagecolor{mainbg}
+
+\begin{document}
+\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}%
+\fcolorbox{red}{sidebg}{%
+    \begin{minipage}[t][\textheight-2\fboxsep-2\fboxrule][t]{\dimexpr0.35\textwidth-2\fboxrule-2\fboxsep\relax}
+        \color{sidetext}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR NAME, PRONOUNS, OCCUPATION(s), AND HEADSHOT
+        {\bfseries\scshape\HUGE Dinesh} \\
+        {\bfseries\scshape\Huge Singh}
+        \vspace{.3cm} \\
+        Senior Software Engineer
+        \vspace{.3cm}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR PERSONAL INFROMATION
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Personal info}
+        \section*{\large Personal info}
+        \begin{tabularx}{\textwidth}{cY}
+            \faPhone{}      & +1 (650)-644-5741 \\
+            \faEnvelope{}   & \href{mailto:dinesh9494singh@outlook.con}{dinesh9494singh@outlook.com} \\
+            \faMapMarker{}  & Santa Clara, California, United States \\
+        \end{tabularx}
+        \vspace{.3cm} \\
+        \rule{\linewidth}{0.4pt} \\
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR LINKS, YOU MAY ALSO ADD A PERSONAL WEBSITE OR PORTFOLIO
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Links}
+        \section*{\large Links}
+        \begin{tabular}{cl}
+        %    \faCode{}     & \href{https://example.com}{example.com}
+            \faGithub{}   & \href{https://github.com/Dinesh94Singh}{Dinesh94Singh} \\
+            \faLinkedin{} & \href{https://www.linkedin.com/in/dinesh-singh-6183a162/}{Dinesh Singh} \\
+        \end{tabular}
+        \vspace{10pt} \\
+        \rule{\linewidth}{0.4pt} \\
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % YOUR SKILLS
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Skills}
+        \section*{\large Skills}
+        \begin{tabularx}{\textwidth}{cY}
+            \faCode{}        & Python, Rust, Java, Hack / PHP, TypeScript, Lua \\
+            \faDatabase      & Mongo-DB, Redis, Oracle SQL, Scuba, Hive \\
+            \faMicrochip{}   & Kafka, Thrift-Rpc, GRpc, Avro \\
+            \faSearch{}      & Vespa AI Search Engine \\
+            \faFileText{}    & Btr-fs, Overlay-fs \\
+            \faAndroid{}     & Andoid Systems Programming \\
+            \faToolbox{}     & Spring Boot, Fast-API, React-JS \\
+            \faBrain         & NLP (B.E.R.T, N.E.R) \\
+            \faCloud{}       & AWS \\
+            \faGithub{}      & Git, Mercurial, Github, Github Actions \\
+            \faCogs{}        & Docker, Kubernetes, Jenkins, Locust, FBPKG, Tupperware\\
+            \faTerminal{}    & NVim, Tmux, Bash \\
+
+        \end{tabularx}
+        \vspace{1pt} \\
+        \rule{\linewidth}{0.4pt}
+        % YOUR Education
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Education}
+        \section*{\large Education}
+        \begin{tabularx}{\textwidth}{cY}
+            \faGraduationCap{}      & Masters in Computer Science (3.9 / 4.0) \\
+            & University of Central Missouri, USA \\
+            \faBuilding             & Bachelors in Information Technology (8.9 / 10.0) \\
+            & GITAM University, India\\
+
+        \end{tabularx}
+        \vspace{1pt} \\
+        \rule{\linewidth}{0.4pt}
+    \end{minipage}
+}
+\hfill
+\fcolorbox{red}{mainbg} {%
+    \begin{minipage}[t][\dimexpr\textheight-2\fboxrule-2\fboxsep\relax][t]{\dimexpr0.65\textwidth-2\fboxrule-2\fboxsep\relax}
+        \color{maintext}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % WORK EXPERIENCE
+        \phantomsection{}
+        \addcontentsline{toc}{section}{Work Experience}
+        \section*{\scshape\Large Work Experience \rule{\linewidth}{0.4pt}}
+%
+        \begin{tabular}{p{0.5\textwidth}p{0.4\textwidth}}
+          \textbf{\medium Optum Inc} & \hspace{\fill}\footnotesize\RaggedRight Mar 2023 \textendash{} Current
+        \end{tabular}
+
+        \begin{itemize}
+            \setlength{\itemsep}{-3pt}
+            \justifying
+            \fontfamily{lmss}\selectfont
+            \item Leading the Backend development for Optum Match.
+            \item Working on Creating scalable services which use different ML models like \textbf{NER (Spacy, Universal NER)}, \textbf{BERT} for \textbf{NLP} and \textbf{Vespa Search} for \textbf{Embeddings Search and Ranking} using \textbf{ONNX, Tensor-Flow ML models}, for all things related to Search and Personalization inside Optum and UHG.
+            \item Implemented User-Behaviour tracking using \textbf{Kafka} and Consumed in data-bricks for Analytics work using \textbf{Avro}, \textbf{Confluent-Kafka} and \textbf{Schema-Registry}.
+            \item Introduced \textbf{gRPC} for effective communication between micro-services.
+            \item Created a Performance test tool which runs on \textbf{Jenkins} pipelines and gets triggered for every PR request and using \textbf{AWS Cloud-watch} analyzed the performance of the existing API’s and narrowed down the bottle-necks and helped improve the performance by 20\%.
+
+        \end{itemize}
+%
+        \begin{tabular}{p{0.5\textwidth}p{0.4\textwidth}}
+          \textbf{\medium Facebook / Meta} & \hspace{\fill}\footnotesize\RaggedRight Aug 2021 \textendash{} Jan 2023
+        \end{tabular}
+        \begin{itemize}
+            \setlength{\itemsep}{-3pt}
+            \justifying
+            \fontfamily{lmss}\selectfont
+            \item Worked on building the services to maintain the infrastructure and play online games within \textbf{Facebook Cloud Gaming} \& \textbf{Meta-verse / Horizon Worlds}.
+            \item Implemented API’s using \textbf{Facebook Graph API} to help third-party developers access and deploy game binaries, game logs and host it on Facebook infrastructure.
+            \item Implemented Security measures using \textbf{Facebook ENT and TAO Frameworks} and participated in Auditing calls from 3rd Party Agencies
+            \item Implemented Staged Push deployments of game binaries using \textbf{CWS (Core-Workflow Services)}
+            \item Implemented Catalog Management of game binaries using \textbf{socket based services} written in \textbf{Rust}
+            \item Implemented \textbf{Async-workflow} services to register uploaded game-binares for malware scanning of game catalogs and ensure the safety of the infrastructure.
+            \item Worked with \textbf{Btr-fs} and \textbf{Overlay-fs} file-systems to create \textbf{Copy-on-Write} file-systems, for hot-mounting game packages
+            \item Implemented \textbf{Over-the-Air} updates for large file-size games to reduce the download and install time by about 10-min.
+            \item Implementing \textbf{Stress Test framework} to perform stress tests of 10,000 users daily run on Horizon worlds (Meta-verse) to travel, group travel / party travel and other user actions
+        \end{itemize}
+%
+
+        \begin{tabular}{p{0.5\textwidth}p{0.4\textwidth}}
+          \textbf{\medium Oracle Cerner} & \hspace{\fill}\footnotesize\RaggedRight Jul 2017 \textendash{} Aug 2021
+        \end{tabular}
+        \begin{itemize}
+            \setlength{\itemsep}{-3pt}
+            \justifying
+            \fontfamily{lmss}\selectfont
+            \item Worked on creating full-stack applications for Medical POC Systems, EMR Management.
+            \item Worked on SOA with \textbf{Restful web services} using \textbf{Jax-Rs}, \textbf{Spring-Boot} for creating public endpoints and improving performance by introducing a scratchpad layer.
+            \item Introduced a Version Engine in both \textbf{React Based Applications} and \textbf{Spring backend Architecture} as an \textbf{in-memory cache}, to reduce database calls and improve performance.
+            \item Implemented \textbf{caching mechanisms} in Spring, which greatly enhanced the performance by about 35\%.
+            \item Introduced a testing framework for front-end applications, which allows different barcode scan workflows.
+            \item Worked with different \textbf{React-15 Lifecycle methods} to prevent unnecessary re-renderings and improved load times by about 15\%.
+            \item Introduced \textbf{Redux} and \textbf{Sagas} frameworks into React Based projects and introduced a new testing framework - \textbf{WDIO} to better test the front-end code.
+        \end{itemize}
+    \end{minipage}
+}
+%
+\newpage
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END
+
